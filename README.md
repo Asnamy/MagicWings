@@ -8,7 +8,7 @@ Abre `magicwings-por-bono.html` en cualquier navegador. Es un solo archivo, trae
 
 | Pestaña | Artículos | Qué puedes filtrar |
 |---|---|---|
-| Tarjetas | 212 | Bonos de la tarjeta (daño vs raza, armadura, botín, inmunidades…), rareza, raza del monstruo, bonos de set |
+| Tarjetas | 241 | Bonos de la tarjeta (daño vs raza, armadura, botín, inmunidades…), rareza, raza del monstruo y conjunto (con sus bonos por 2, 3, 4 y 5 partes) |
 | Equipo general | 173 | Atributos (vida, daño, penetración, absorción…), estilo de la pasiva, clase |
 | Botas | 13 | Igual que equipo general |
 | Amuletos | 14 | Atributos y efectos especiales (protección al morir, más botín, más experiencia…) |
@@ -25,6 +25,6 @@ Abre `magicwings-por-bono.html` en cualquier navegador. Es un solo archivo, trae
 
 ## Notas
 
-- Datos tomados de la wiki el 6 de octubre de 2026. Si el juego cambia, hay que regenerar el archivo.
+- Datos tomados de la wiki el 6 de octubre de 2026 (tarjetas y conjuntos actualizados el 8 de octubre). Si el juego cambia, hay que regenerar el archivo.
 - Los nombres de los artículos están en inglés, igual que en el listado de la wiki. Bonos, pasivas y descripciones están en español.
 - Las etiquetas de efecto de los amuletos (protección al morir, más botín, etc.) se asignaron a mano leyendo cada descripción.
