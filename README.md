@@ -25,6 +25,6 @@ Abre `magicwings-por-bono.html` en cualquier navegador. Es un solo archivo, trae
 
 ## Notas
 
-- Datos tomados de la wiki el 6 de octubre de 2026 (tarjetas y conjuntos actualizados el 8 de octubre). Si el juego cambia, hay que regenerar el archivo.
+- Datos tomados de la wiki el 6 de octubre de 2026 (revisado de nuevo el 8 de octubre: tarjetas y conjuntos actualizados; equipo, recetas y alimentos sin cambios). Si el juego cambia, hay que regenerar el archivo.
 - Los nombres de los artículos están en inglés, igual que en el listado de la wiki. Bonos, pasivas y descripciones están en español.
 - Las etiquetas de efecto de los amuletos (protección al morir, más botín, etc.) se asignaron a mano leyendo cada descripción.

@@ -7,17 +7,17 @@
 <style>
 :root{
   --bg:#f6f7f9;--panel:#ffffff;--panel2:#f0f2f5;--border:#dde1e7;--text:#1b1f27;--muted:#5d6675;
-  --accent:#2563eb;--accent-soft:#dbe7ff;--neg:#c2410c;
+  --accent:#2563eb;--accent-soft:#dbe7ff;--neg:#c2410c;--set:#a16207;--fx:#b45309;
   --t1:#6b7280;--t2:#16a34a;--t3:#2563eb;--t4:#9333ea;--t5:#d97706;--t6:#db2777;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0d0f13;--panel:#161920;--panel2:#1d2129;--border:#2a2f3a;--text:#e6e8ec;--muted:#8d95a3;
-  --accent:#5b8cff;--accent-soft:#1c2a4a;--neg:#fb923c;
+  --accent:#5b8cff;--accent-soft:#1c2a4a;--neg:#fb923c;--set:#ffd700;--fx:#ffdf7f;
   --t1:#9ca3af;--t2:#4ade80;--t3:#60a5fa;--t4:#c084fc;--t5:#fbbf24;--t6:#f472b6;
 }}
 :root[data-theme="dark"]{
   --bg:#0d0f13;--panel:#161920;--panel2:#1d2129;--border:#2a2f3a;--text:#e6e8ec;--muted:#8d95a3;
-  --accent:#5b8cff;--accent-soft:#1c2a4a;--neg:#fb923c;
+  --accent:#5b8cff;--accent-soft:#1c2a4a;--neg:#fb923c;--set:#ffd700;--fx:#ffdf7f;
   --t1:#9ca3af;--t2:#4ade80;--t3:#60a5fa;--t4:#c084fc;--t5:#fbbf24;--t6:#f472b6;
 }
 *{box-sizing:border-box}
@@ -77,6 +77,9 @@ select{padding:5px 8px;border:1px solid var(--border);border-radius:8px;backgrou
 .desc{font-size:12px;color:var(--muted)}
 .card .desc{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pname{color:var(--accent);font-weight:600}
+.setword{color:var(--set);font-weight:700}
+dialog h4.setword{color:var(--set)}
+dialog h4.fxword{color:var(--fx)}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .extra{margin-top:28px}
 .extra h2{font-size:15px;margin:0 0 8px}
@@ -269,12 +272,12 @@ const cardItems = CARDS.cards.map(c => {
   const showDesc = fx.some(x=>x.noValue && !x.hideChip);
   return {
     id:c.id, name:c.name, tier:c.tier, fx, tr, extra:c.races,
-    sub: c.races.map(r).join(', ') + (sets.length ? ' · Conjunto: '+sets.map(sn).join(', ') : ''),
+    sub: c.races.map(r).join(', ') + (sets.length ? ' · <span class="setword">Conjunto:</span> '+sets.map(sn).join(', ') : ''),
     cardDesc: showDesc ? esc(c.description.enUs) : '',
     text: [c.name,c.monsterName,c.description.enUs,c.description.ptBr,...c.races.map(r),...sets,...sets.map(sn)].join(' '),
     detail: () => `<p class="meta">Monstruo: ${esc(c.monsterName)}<br>Razas: ${c.races.map(r).join(', ')}</p>`
-      + `<h4>Efectos</h4>` + statTable(fx.filter(e=>!e.hideChip), tr)
-      + (sets.length ? `<h4>Conjuntos</h4>` + sets.map(f=>setBlock(f,{current:c.id, sel:V.state.sel})).join('') : '')
+      + `<h4 class="fxword">Efectos</h4>` + statTable(fx.filter(e=>!e.hideChip), tr)
+      + (sets.length ? `<h4 class="setword">Conjuntos</h4>` + sets.map(f=>setBlock(f,{current:c.id, sel:V.state.sel})).join('') : '')
       + `<p class="desc" style="margin-top:12px"><b>Descripción original:</b> ${esc(c.description.enUs)}</p>`,
   };
 });
