@@ -8,12 +8,12 @@ Abre `magicwings-por-bono.html` en cualquier navegador. Es un solo archivo, trae
 
 | Pestaña | Artículos | Qué puedes filtrar |
 |---|---|---|
-| Tarjetas | 241 | Bonos de la tarjeta (daño vs raza, armadura, botín, inmunidades…), rareza, raza del monstruo y conjunto (con sus bonos por 2, 3, 4 y 5 partes) |
+| Tarjetas | 246 | Bonos de la tarjeta (daño vs raza, armadura, botín, inmunidades…), rareza, raza del monstruo y conjunto (con sus bonos por 2, 3, 4 y 5 partes) |
 | Equipo general | 173 | Atributos (vida, daño, penetración, absorción…), estilo de la pasiva, clase |
 | Botas | 13 | Igual que equipo general |
-| Amuletos | 14 | Atributos y efectos especiales (protección al morir, más botín, más experiencia…) |
-| Recetas | 110 | Efectos que puede llevar el plato según los ingredientes, tipo de ingrediente |
-| Alimentos | 80 | Efecto al cocinar, regeneración de vida/maná, tipo de ingrediente |
+| Amuletos | 17 | Atributos y efectos especiales (protección al morir, más botín, más experiencia, atraer monstruos a distancia…) |
+| Recetas | 109 | Efectos que puede llevar el plato según los ingredientes, tipo de ingrediente |
+| Alimentos | 81 | Efecto al cocinar, regeneración de vida/maná, tipo de ingrediente |
 
 ## Cómo se usa
 
@@ -25,6 +25,6 @@ Abre `magicwings-por-bono.html` en cualquier navegador. Es un solo archivo, trae
 
 ## Notas
 
-- Datos tomados de la wiki el 6 de octubre de 2026 (revisado de nuevo el 8 de octubre: tarjetas y conjuntos actualizados; equipo, recetas y alimentos sin cambios). Si el juego cambia, hay que regenerar el archivo.
+- Datos actualizados desde la wiki el 8 de noviembre de 2026 (extracción de la wiki del mismo día, cliente del juego 444). Si el juego cambia, hay que regenerar el archivo.
 - Los nombres de los artículos están en inglés, igual que en el listado de la wiki. Bonos, pasivas y descripciones están en español.
 - Las etiquetas de efecto de los amuletos (protección al morir, más botín, etc.) se asignaron a mano leyendo cada descripción.
